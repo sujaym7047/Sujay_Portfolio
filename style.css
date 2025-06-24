@@ -1,105 +1,103 @@
-*{
-            margin:0;
-            padding:0;
-            box-sizing: border-box;
-        }
-        body{
-            background-color: rgb(195, 69, 240); /* Purple */
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-        header {
-            width: 100%;
-        }
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 40px;
-        }
-        .logo {
-            flex: 0 0 auto;
-            margin-right: 50px;
-        }
-        .logo img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%; /* Makes the image circular */
-            object-fit: cover;
-            border: 2px solid #fff;
-            overflow: hidden;
-            
-            
-        }
-        /* Title Animation */
-.left {
-    flex: 1;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    background: linear-gradient(90deg, #00ffe7, #ff00c8, #00ffe7);
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 2.5s linear infinite;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-@keyframes shine {
-    to {
-        background-position: 200% center;
-    }
+body {
+  background: linear-gradient(to right, #916de5, #e9e4f0);
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Menu Items Animation */
-.right ul li {
-    opacity: 0;
-    transform: translateY(-30px);
-    animation: menuFadeIn 0.8s forwards;
-    animation-delay: calc(0.2s * var(--i));
+header {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  position: relative;
 }
 
-.right ul li {
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: color 0.2s, transform 0.3s;
-    position: relative;
+.profile-pic {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
 }
 
-.right ul li:hover {
-    color: #00ffe7;
-    transform: scale(1.15) rotate(-2deg);
-    text-shadow: 0 2px 20px #00ffe788;
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 
-@keyframes menuFadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-/* Assign animation delays to each menu item */
-.right ul li:nth-child(1) { --i: 1; }
-.right ul li:nth-child(2) { --i: 2; }
-.right ul li:nth-child(3) { --i: 3; }
-.right ul li:nth-child(4) { --i: 4; }
-.bio {
-    max-width: 600px;
-    margin: 40px auto 0 auto;
-    background: rgba(255,255,255,0.08);
-    border-radius: 20px;
-    padding: 32px 24px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
-    text-align: center;
-    color: #fff;
-    font-size: 1.2rem;
-    backdrop-filter: blur(2px);
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
 }
-.bio h2 {
-    margin-bottom: 16px;
-    font-size: 2rem;
-    color: #00ffe7;
-    letter-spacing: 1px;
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: #6c5ce7;
+  margin-bottom: 1rem;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #5a4bcf;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #6c5ce7;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
