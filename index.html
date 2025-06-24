@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sujay Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img.jpg" alt="Logo">
-            </div>
-            <div class="left">Sujay's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="Experience">Experience</a></li>
-                    <li><a href="Project">Project</a></li>
-                    <li><a href="contact-info">Contact</a></li>
-                    </ul>
-                    </li>
-                        
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section class="bio">
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm Sujay! I'm a passionate web developer with a love for creating beautiful and interactive websites. I enjoy learning new technologies and building projects that make a difference. Welcome to my portfolio!
-        </p>
-    </section>
-    <script src="main.js"></script>
+  <header>
+    <img src="Myimage.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Sujay Portfolio</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hello! I’m a passionate web developer with a love for clean and functional designs.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="card">
+      <h2>Skills</h2>
+      
+      <ul>
+        <h3>Languages:</h3>
+        <li>Python, SQL, JAVA</li>
+        <li>HTML, CSS, JavaScript</li>
+        <h3>Frameworkes:</h3>
+        <li>Pandas, Numpy, Scikit-Learn, Matplotlib</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="card">
+      <h2>Projects</h2>
+      <p>Project 1: Real Time Database Development and Affective Computing using CNN</p>
+      <p>Project 2: Blood Bank Managemant System</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="card">
+      <h2>Education</h2>
+      <p>B.Tech in Computer Science Engineering Specilization Artificial Inteligence and machhine Learning at Future Institute of Technology (2022-2025)</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sujay Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
